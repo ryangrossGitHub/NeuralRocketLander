@@ -1,7 +1,7 @@
 # NeuroRocketLander ([Demo](http://ryangrossGitHub.github.io/NeuralRocketLander/))
 
-A super simple nueral net learning to land a rocket.
+A super simple nueral net learning to land a rocket. [Neuroevolution](http://www.scholarpedia.org/article/Neuroevolution)
 
-[Neuroevolution](http://www.scholarpedia.org/article/Neuroevolution)
+If you like this also check out https://github.com/ryangrossGitHub/FlappyLearning
 
 ![Alt text](img/Capture.PNG?raw=true)
