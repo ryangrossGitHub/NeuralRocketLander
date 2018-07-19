@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NeuroRocketLander</title>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href="./index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div style="display: flex;">
+		<div>
+			<canvas id="canvas" width="500" height="512"></canvas> <br/>
+			<span style="font-size: 24px;">Sound</span>
+			<label class="switch">
+				<input type="checkbox" onClick="toggleSound()">
+				<span class="slider round"></span>
+			</label>
+		</div>
+
+		<div style="margin-left: 50px">
+			<h2>High Scores</h2>
+			<div id="scores"></div>
+		</div>
+	</div>
+</body>
+</html>
+
+<script src = "Neuroevolution.js"></script>
+<script src = "RocketLander.js"></script>
