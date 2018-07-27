@@ -24,7 +24,7 @@
 
 var AI;
 var game;
-var highScoreSize = 25;
+var highScoreSize = 10;
 var FPS = 60;
 var gravity = 9.8; //Earths gravity
 var crash = false;
