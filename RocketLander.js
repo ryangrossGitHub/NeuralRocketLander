@@ -152,20 +152,19 @@ Game.prototype.start = function(){
 }
 
 Game.prototype.updateHighScores = function(){
-	var highScoresContainer = document.getElementById("scores");
-	highScoresContainer.innerHTML = `
-					<div style="display: flex;">
-						<div style="min-width:50px">Rank</div>
-						<div style="min-width:150px">Score</div>
-						<div style="min-width:150px">Generation</div>
-						<div style="min-width:150px">Landing Velocity</div>
-						<div style="min-width:150px">Remaining Fuel</div>
-					</div>
-				`
+	var newHighScoreContent = `
+			<div style="display: flex;">
+				<div style="min-width:50px">Rank</div>
+				<div style="min-width:150px">Score</div>
+				<div style="min-width:150px">Generation</div>
+				<div style="min-width:150px">Landing Velocity</div>
+				<div style="min-width:150px">Remaining Fuel</div>
+			</div>
+		`
 	
 	for(var i=0; i<highScoreSize; i++){
 		if(this.highScores[i] != undefined){
-			highScoresContainer.innerHTML += `
+			newHighScoreContent += `
 				<div style="display: flex;">
 					<div style="min-width:50px">${i+1}</div>
 					<div style="min-width:150px;"><b>${this.highScores[i].score}</b></div>
@@ -176,6 +175,8 @@ Game.prototype.updateHighScores = function(){
 			`;
 		}
 	}
+
+	document.getElementById("scores").innerHTML = newHighScoreContent;
 }
 
 Game.prototype.update = function(){
