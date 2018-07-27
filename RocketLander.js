@@ -160,7 +160,7 @@ Game.prototype.updateHighScores = function(){
 				<div style="min-width:150px">Landing Velocity</div>
 				<div style="min-width:150px">Remaining Fuel</div>
 			</div>
-		`
+		`;
 	
 	for(var i=0; i<highScoreSize; i++){
 		if(this.highScores[i] != undefined){
@@ -253,7 +253,7 @@ Game.prototype.update = function(){
 
 	setTimeout(function(game){
 		game.updateHighScores();
-	}, 1000, this);
+	}, 2000, this);
 
 	setTimeout(function(){
 		if(audioEnabled && crash){
