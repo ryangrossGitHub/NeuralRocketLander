@@ -343,7 +343,7 @@ window.onload = function(){
 
 	loadImages(sprites, function(imgs){
 		images = imgs;
-		start(30);
+		start(10);
 	});
 }
 
